@@ -1,0 +1,26 @@
+{
+    "name": "acf/block-banner",
+    "title": "Block Banner",
+    "description": "A Banner Block",
+    "style": [ "block-main-style" ],
+    "editorStyle":[ "file:../../dist/assets/css/main.css", "block-main-style"],
+    "category": "text",
+    "icon": "admin-comments",
+    "keywords": ["editor", "text"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block-banner.php"
+    },
+    "align": "full",
+    "version":2,
+    "selectors": {
+        "root": ".my-custom-block-selector",
+        "color": {
+            "text": ".my-custom-block-selector p"
+        },
+        "typography": {
+            "root": ".my-custom-block-selector > h2",
+            "text-decoration": ".my-custom-block-selector > h2 span"
+        }
+    }
+}

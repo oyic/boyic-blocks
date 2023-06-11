@@ -1,0 +1,11 @@
+.--boyic--custom--blocks {
+    &.--block--wysiwyg {
+        position: relative;
+        display: block;
+        .container {
+            @include container;
+        }
+      
+    }
+   
+}

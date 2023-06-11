@@ -1,0 +1,16 @@
+{
+    "name": "acf/block-image-text",
+    "title": "Block Image Text",
+    "description": "A Image Text Block",
+    "style": [ "block-main-style" ],
+    "editorStyle":[ "file:../../dist/assets/css/main.css", "block-main-style"],
+    "category": "text",
+    "icon": "admin-comments",
+    "keywords": ["editor", "text", "image"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block-image-text.php"
+    },
+    "align": "wide",
+    "version":2
+}

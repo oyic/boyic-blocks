@@ -1,0 +1,16 @@
+{
+    "name": "acf/block-wysiwyg",
+    "title": "Block Wysiwyg",
+    "description": "A Wysiwyg Block",
+    "style": [ "block-main-style" ],
+    "editorStyle":[ "file:../../dist/assets/css/main.css", "block-main-style"],
+    "category": "text",
+    "icon": "admin-comments",
+    "keywords": ["editor", "text"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block-wysiwyg.php"
+    },
+    "align": "wide",
+    "version":2
+}

@@ -1,0 +1,58 @@
+.--boyic--custom--blocks {
+    &.--block--banner {
+        position: relative;
+        display: block;
+        .background-image {
+            position: relative;
+            z-index: 1;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            background-position: center;
+            background-size: cover;
+
+            .banner-image {
+                object-fit: cover;
+                width: 100%;
+                height: auto;
+                @media (max-width: $breakpoint-tablet) {
+                    display: none;
+                }
+            }
+            &.--clip--mask {
+                &::before {
+                    content:'';
+                    background: var(--swapping--mask--background);
+                    background-color: #fff;
+                    background-repeat: no-repeat;
+                    // background-attachment: fixed;
+                    background-position: center;
+                    background-size: cover;
+                    height: 100%;
+                    width: 100%;
+                    display: block;
+                    position: relative;
+                    mix-blend-mode: screen;
+                    position: absolute;
+                }
+            }
+        }
+        .container {
+            @include container;
+        }
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            width: 100%;
+            height: auto;
+            top:0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+        }
+    }
+   
+}

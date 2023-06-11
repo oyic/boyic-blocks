@@ -1,0 +1,107 @@
+
+//@TODO: For JS Responsive requirements
+body:before {
+	content: "xsmall";
+	display: none;
+	visibility: hidden;
+    @media (min-width: $breakpoint-mobile ) {
+        content:"mobile"
+    }
+    @media (min-width: $breakpoint-tablet ) {
+        content:"tablet"
+    }
+    @media (min-width: $breakpoint-tablet-pro ) {
+        content:"tablet-pro"
+    }
+    @media (min-width: $breakpoint-laptop ) {
+        content:"laptop"
+    }
+    @media (min-width: $breakpoint-laptop-large ) {
+        content:"laptop-large"
+    }
+}
+
+.is-layout-constrained > .componentSpacing {
+    margin-block-start:var(--spacing--mobile);
+    margin-block-end:var(--spacing--mobile);
+
+    @media (max-width: $breakpoint-laptop-large)  {
+        margin-block-start: var(--spacing--laptop--large);
+        margin-block-end: var(--spacing--laptop--large);
+    }
+    @media (max-width: $breakpoint-laptop)  {
+        margin-block-start: var(--spacing--laptop);
+        margin-block-end: var(--spacing--laptop);
+    }
+
+    @media (max-width: $breakpoint-tablet-pro ) {
+      margin-block-start: var(--spacing--tablet--pro);
+      margin-block-end: var(--spacing--tablet--pro);
+    }
+    @media (max-width: $breakpoint-tablet ) {
+      margin-block-start: var(--spacing--tablet);
+      margin-block-end: var(--spacing--tablet);
+    }
+    @media( max-width: $breakpoint-mobile ) {
+        margin-block-start: var(--spacing--mobile);
+        margin-block-end: var(--spacing--mobile);
+    }
+
+   &[class*='theme'] {
+    margin: 0;
+   }
+}
+  
+  .centerMaxWidthContainer {
+    @include center;
+  
+    @media (min-width: var(--breakpoint--tablet)) {
+      @include center($padding:var(--spacing--tablet));
+    }
+  
+    @media (min-width: var(--breakpoint--laptop)) {
+      @include center($padding: var(--breakpoint--laptop));
+    }
+  }
+  
+  .centerContentMaxWidth {
+    margin: 0 auto;
+    max-width: $content-max-width;
+  }
+
+.theme {
+    &--dark {
+        background-color: var(--theme--dark--background);
+        color: var(--theme--light--color);
+    }
+    // &-- {
+    //     background-color: $bg-light;
+    // }
+}
+
+.--boyic--custom--blocks {
+    
+    position: relative;
+    margin-block-start: unset;
+    margin-block-end: unset;
+
+    * {
+        margin-block-start: unset;
+        margin-block-end: unset;
+    }
+    .container {
+        @include container;
+
+    }
+}
+.editor-styles-wrapper .is-layout-constrained > * + * {
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+}
+.editor-styles-wrapper .wp-block-post-content a:where(:not(.wp-element-button)) {
+    color: $color-white;
+}
+.invisible {
+    visibility: hidden;
+    opacity: 0;
+}

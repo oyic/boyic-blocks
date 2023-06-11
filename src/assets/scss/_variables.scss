@@ -1,0 +1,32 @@
+:root {
+
+    --spacing--laptop--large: 120px;
+    --spacing--laptop: 100px;
+    --spacing--tablet--pro: 80px;
+    --spacing--tablet: 60px;
+    --spacing--mobile: 30px;
+    --spacing--horizontal: 30px;
+    --swapping--mask--background: url(https://picsum.photos/seed/picsum/200/300);
+    --theme--dark--background: #021818cb;
+    --theme--dark--color: var(--theme--dark--background) ;
+    --theme--light--background: #eee;
+    --theme--light--color: var(--theme--light--background);
+    --container--max--width: 1200px;
+}
+$breakpoint-laptop-large: 1440px;
+$breakpoint-laptop: 1280px;
+$breakpoint-tablet-pro: 1024px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 375px;
+
+$content-max-width: 600px;
+$container-max-width: 1440px;
+$color-white: #fbfbfb;
+
+//Colors
+$color-primary: #2f76d9;
+$color-secondary: #a51fb9;
+
+
+
+

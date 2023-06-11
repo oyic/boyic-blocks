@@ -1,0 +1,13 @@
+@import "./variables";
+@import "./mixins";
+@import "./base.scss";
+
+// Blocks specifics
+
+@import "./../../../blocks/block-wysiwyg/block-wysiwyg";
+@import "./../../../blocks/block-banner/block-banner";
+@import "./../../../blocks/block-image-text/block-image-text";
+
+
+
+
